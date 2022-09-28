@@ -17,17 +17,17 @@
   <!-- header -->
   <header class="head">
     <nav class="head-nav">
-      <a href="./" class="nav-link--home" lang="en">Web<span class="logo">Studio</span></a>
+      <a href="./" class="link logo" lang="en">Web<span class="c-logo">Studio</span></a>
       <ul class="nav-list">
-        <li class="item"><a class="nav-link" href="./">Студія</a></li>
-        <li class="item"><a class="nav-link" href="./portfolio.html">Портфоліо</a></li>
-        <li class="item"><a class="nav-link" href="#contacts">Контакти</a></li>
+        <li class="item"><a class="link nav-link" href="./">Студія</a></li>
+        <li class="item"><a class="link nav-link" href="./portfolio.html">Портфоліо</a></li>
+        <li class="item"><a class="link nav-link" href="#contacts">Контакти</a></li>
       </ul>
     </nav>
 
-    <ul class="link-list">
-      <li class="item"><a class="link-mailto" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li class="item"><a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <ul class="address-list">
+      <li class="item"><a class="link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      <li class="item"><a class="link address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
     </ul>
 
   </header>
@@ -37,11 +37,11 @@
 
     <section class="hero">
       <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-      <button class="order" type="button">Замовити послугу</button>
+      <button class="order pointer" type="button">Замовити послугу</button>
     </section>
 
     <section class="features">
-      <h2 class="features-title">Особливості</h2>
+      <h2 class="visually-hidden">Особливості</h2>
       <ul class="list">
         <li class="item">
           <h3 class="title">Увага до деталей</h3>
@@ -49,15 +49,15 @@
         </li>
         <li class="item">
           <h3 class="title">Пунктуальність</h3>
-          <p class="title">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+          <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
         </li>
         <li class="item">
           <h3 class="title">Планування</h3>
-          <p class="title">Так само консультація з широким активом значною мірою зумовлює.</p>
+          <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
         </li>
         <li class="item">
           <h3 class="title">Сучасні технології</h3>
-          <p class="title">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+          <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
         </li>
       </ul>
     </section>
@@ -75,23 +75,26 @@
       <h2 class="team-title">Наша команда</h2>
       <ul class="list">
         <li class="item">
-          <img src="./images/main/igor.jpg" alt="Фото Ігоря" width="270">
-          <h3 class="title">Ігор Дем'яненко</h3>
+          <img src="./images/main/igor.jpg" alt="Фотопортрет усміхненого Ігоря в окулянах та червоній сорочці"
+            width="270" height="260>
+          <h3 class=" title">Ігор Дем'яненко</h3>
           <p class="text" lang="en">Product Designer</p>
         </li>
         <li class="item">
-          <img src="./images/main/olha.jpg" alt="Фото Ольги" width="270">
-          <h3 class="title">Ольга Рєпіна</h3>
+          <img src="./images/main/olha.jpg" alt="Фотопортрет усміхненої Ольги в окулянах і чорному піджаку" width="270"
+            height="260>
+          <h3 class=" title">Ольга Рєпіна</h3>
           <p class="text" lang="en">Frontend Developer</p>
         </li>
         <li class="item">
-          <img src="./images/main/mykola.jpg" alt="Фото Миколи" width="270">
-          <h3 class="title">Микола Тарасов</h3>
+          <img src="./images/main/mykola.jpg" alt="Фотопортрет усміхненого Миколи у білій сорочці" width="270" height="260>
+          <h3 class=" title">Микола Тарасов</h3>
           <p class="text" lang="en">Marketing</p>
         </li>
         <li class="item">
-          <img src="./images/main/mykhailo.jpg" alt="Фото Михайла" width="270">
-          <h3 class="title">Михайло Єрмаков</h3>
+          <img src="./images/main/mykhailo.jpg" alt="Фотопортрет усміхненого Михайла в окулянах і чорній футболці"
+            width="270" height="260>
+          <h3 class=" title">Михайло Єрмаков</h3>
           <p class="text" lang="en">UI Designer</p>
         </li>
       </ul>
@@ -102,13 +105,16 @@
   <!-- footer -->
   <footer class="footer">
 
-    <a href="./" class="nav-link--home" lang="en">Web<span class="logo">Studio</span></a>
+    <a href="./" class="link logo" lang="en">Web<span class="c-logo">Studio</span></a>
     <address id="contacts" class="address">
       <ul class="link-list">
-        <li class="item"><a class="link-map" href="http://maps.google.com/?q=м.+Київ,+пр-т+Лесі+Українки,+26"
-            target="_blank" rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a></li>
-        <li class="item"><a class="link-mailto" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="item"><a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="item"><a class="link address-link address-map"
+            href="http://maps.google.com/?q=м.+Київ,+пр-т+Лесі+Українки,+26" target="_blank"
+            rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a></li>
+        <li class="item"><a class="link address-link address-mailto"
+            href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="item"><a class="link address-link address-tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </address>
 

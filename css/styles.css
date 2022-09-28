@@ -1,18 +1,238 @@
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-body {
-  font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+/* global */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.filter-btn {
-  /* background-color: #f5f4fa; */
-  /* border-color: floralwhite; */
+:root {
+  --color-text-p: #212121;
+  --color-text-s: #757575;
+  --color-blue: #2196f3;
+  --color-f-bg: #2f303a;
+  --color-btn-bg: #f5f4fa;
+  --color-white: #ffffff;
+  --font-roboto: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+  --font-raleway: 'Raleway';
 }
-.filter-btn:active {
-  color: #ffffff;
+
+body {
+  font-family: var(--font-roboto);
+  color: var(--color-text-p);
 }
 
 .item {
   list-style: none;
+  display: inline-block;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* header */
+
+.logo {
+  font-family: var(--font-raleway);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--color-blue);
+}
+
+.c-logo {
+  color: #000000;
+}
+.nav-link,
+.head .address-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.address-link {
+  font-style: normal;
+  color: var(--color-text-s);
+}
+.address-link:hover,
+.address-link:focus,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-blue);
+}
+/*Footer*/
+.footer {
+  width: 1600px;
+  height: 252px;
+  background: var(--color-f-bg);
+}
+.footer .item {
+  display: block;
+}
+
+.footer .c-logo,
+.address-map {
+  color: var(--color-white);
+}
+.footer .address-link {
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-mailto,
+.address-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Головна - main */
+.hero {
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background: var(--color-f-bg);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+.order {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* width: 216px; */
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background: var(--color-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.features .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  /* color: var(--color-text-p); */
+}
+
+.features .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-text-s);
+}
+
+.about-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: var(--color-text-p); */
+}
+
+.team {
+  background: #f5f4fa;
+}
+
+.team .item {
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  /* color: var(--color-text-p); */
+}
+
+.team .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--color-text-s);
+}
+
+/**/
+
+.filter-btn {
+  border: none;
+
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  /* color: var(--color-text-p); */
+  background: var(--color-btn-bg);
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--color-white);
+  background: var(--color-blue);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.project-item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid #eeeeee;
+}
+
+.project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  /* color: var(--color-text-p); */
+}
+
+.project-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--color-text-s);
 }
