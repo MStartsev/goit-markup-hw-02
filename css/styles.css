@@ -1,6 +1,3 @@
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
 /* global */
 *,
 *::before,
@@ -12,21 +9,32 @@ font-family: 'Roboto', sans-serif; */
   --color-text-p: #212121;
   --color-text-s: #757575;
   --color-blue: #2196f3;
+  --color-c-logo: #000000;
+  --color-c-blue: #188ce8;
   --color-f-bg: #2f303a;
-  --color-btn-bg: #f5f4fa;
+  --color-bg: #f5f4fa;
   --color-white: #ffffff;
+  --color-address-g: rgba(255, 255, 255, 0.6);
   --font-roboto: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
   --font-raleway: 'Raleway';
+  --border-portfolio: 1px solid #ececec;
+  --border-project: 1px solid #eeeeee;
 }
 
-body {
+body,
+.link,
+.pointer {
   font-family: var(--font-roboto);
   color: var(--color-text-p);
+  font-weight: 400;
 }
 
 .item {
   list-style: none;
-  display: inline-block;
+}
+
+.item .current {
+  color: var(--color-blue);
 }
 
 .link {
@@ -55,14 +63,15 @@ body {
   font-family: var(--font-raleway);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-blue);
 }
 
 .c-logo {
-  color: #000000;
+  color: var(--color-c-logo);
 }
+
 .nav-link,
 .head .address-link {
   font-weight: 500;
@@ -75,20 +84,18 @@ body {
   font-style: normal;
   color: var(--color-text-s);
 }
+
 .address-link:hover,
 .address-link:focus,
 .nav-link:hover,
 .nav-link:focus {
   color: var(--color-blue);
 }
+
 /*Footer*/
+
 .footer {
-  width: 1600px;
-  height: 252px;
   background: var(--color-f-bg);
-}
-.footer .item {
-  display: block;
 }
 
 .footer .c-logo,
@@ -96,38 +103,29 @@ body {
   color: var(--color-white);
 }
 .footer .address-link {
-  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 .address-mailto,
 .address-tel {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-address-g);
 }
 
 /* Головна - main */
 .hero {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background: var(--color-f-bg);
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white);
 }
-.order {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  /* width: 216px; */
-  height: 50px;
+
+.hero-order {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -139,17 +137,20 @@ body {
   border: none;
 }
 
+.hero-order:hover,
+.hero-order:focus {
+  background: var(--color-c-blue);
+}
+
 .features .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  /* color: var(--color-text-p); */
 }
 
 .features .text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -161,13 +162,11 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
-  /* color: var(--color-text-p); */
 }
 
 .team {
-  background: #f5f4fa;
+  background: var(--color-bg);
 }
 
 .team .item {
@@ -182,29 +181,29 @@ body {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  /* color: var(--color-text-p); */
 }
 
 .team .text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-text-s);
 }
 
-/**/
+/*Main - Портфоліо*/
+
+.portfolio {
+  border-top: var(--border-portfolio);
+}
 
 .filter-btn {
   border: none;
-
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  /* color: var(--color-text-p); */
-  background: var(--color-btn-bg);
+  background: var(--color-bg);
 }
 
 .filter-btn:hover,
@@ -218,7 +217,7 @@ body {
 .project-item {
   width: 370px;
   height: 404px;
-  border: 1px solid #eeeeee;
+  border: var(--border-project);
 }
 
 .project-title {
@@ -226,11 +225,9 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  /* color: var(--color-text-p); */
 }
 
 .project-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
