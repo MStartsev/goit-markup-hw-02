@@ -1,9 +1,4 @@
 /* global */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 :root {
   --color-text-p: #212121;
@@ -15,8 +10,8 @@
   --color-bg: #f5f4fa;
   --color-white: #ffffff;
   --color-address-g: rgba(255, 255, 255, 0.6);
-  --font-roboto: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
-  --font-raleway: 'Raleway';
+  --font-roboto: 'Roboto', sans-serif;
+  --font-raleway: 'Raleway', sans-serif;
   --border-portfolio: 1px solid #ececec;
   --border-project: 1px solid #eeeeee;
 }
@@ -26,7 +21,7 @@ body,
 .pointer {
   font-family: var(--font-roboto);
   color: var(--color-text-p);
-  font-weight: 400;
+  /* font-weight: 400; */
 }
 
 .item {
@@ -103,6 +98,7 @@ body,
   color: var(--color-white);
 }
 .footer .address-link {
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
